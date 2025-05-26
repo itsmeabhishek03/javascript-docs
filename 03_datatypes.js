@@ -31,8 +31,8 @@ var a = 10;
 var b = a; // b is a copy of a
 var b = 20; // b is a copy of a, so changing b will not change a
 console.log(a); // Output: 10
-console.log(b); // Output: 10
-console.log(a === b); // Output: true
+console.log(b); // Output: 20
+console.log(a === b); // Output: false
 
 // heap memory (non-primitive data types)
 var obj1 = {
