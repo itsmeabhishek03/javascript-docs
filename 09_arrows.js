@@ -12,7 +12,7 @@ const user = {
 // user.username = "sam"
 // user.welcomeMessage()
 
-console.log(this);
+console.log(this); // this will refer to the global object in non-strict mode, and undefined in strict mode but in browser it will refer to the window object
 
 // function chai(){
 //     let username = "hitesh"
