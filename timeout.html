@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Abhishek Mishra </h1>
+    <button class="btn"> stop </button>
+</body>
+<script>
+    // setTimeout(function(){
+    //     console.log("Abhishek Mishra");
+    // }, 1000);  // This will print the name after 1 second
+
+    // function printName(){
+    //     console.log("Abhishek Mishra");
+    // }
+    // setTimeout(printName, 1000) // This will also print the name after 1 second 
+
+    function changename(){
+        document.querySelector("h1").innerHTML = "Abhishek Mishra Changed";
+    }
+
+    const timeoutId = setTimeout(changename, 5000); // This will change the name in the h1 tag after 1 second
+
+    document.querySelector(".btn").addEventListener("click", function(){
+        clearTimeout(timeoutId); // This will stop the timeout from executing
+        console.log("Timeout stopped");
+    });
+</script>
+</html>

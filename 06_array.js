@@ -42,7 +42,8 @@ const all_new_heros = [...marvel_heros, ...dc_heros]; // this will add the each 
 // console.log(all_new_heros);
 
 const another_array = [1, 2, 3, [4, 5, 6], 7, [6, 7, [4, 5]]];
-
+const real1 = [...another_array];
+console.log("my array", real1); // [1, 2, 3, [4, 5, 6], 7, [6, 7, [4, 5]]] (shallow copy)
 const real_another_array = another_array.flat(Infinity); // this will flatten the array to a single level, like this - [1, 2, 3, 4, 5, 6, 7, 6, 7, 4, 5] (same as concat but mostly used)
 console.log(real_another_array);
 

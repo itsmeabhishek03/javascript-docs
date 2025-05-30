@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Start and Stop </h1>
+    <button class="start"> start </button>
+    <button class="stop"> stop </button>
+</body>
+    <script>
+
+        function start(name){
+            console.log(name);
+        }
+        let intervalId = null; // This will hold the interval ID
+        document.querySelector(".start").addEventListener("click", function(){
+                intervalId = setInterval(start, 1000, "clicked"); // In setinterval we can pass parameters to the function
+                console.log("Interval started");
+        });
+
+        document.querySelector(".stop").addEventListener("click", function(){
+                clearInterval(intervalId);
+                console.log("Interval stopped");
+        });
+    </script>
+</html>
