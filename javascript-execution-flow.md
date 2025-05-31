@@ -183,3 +183,5 @@ Understanding these layers—execution contexts, the call stack, the event loop,
 ## Refer the Image below for clarification
 
 ![alt text](image.png)
+
+![alt text](image-1.png)
